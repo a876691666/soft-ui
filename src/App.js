@@ -1,13 +1,24 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import { Shell } from '@alifd/next';
+import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <div className="so-button">按钮</div>
-      <div className="so-button">按钮</div>
-      <div className="so-button">按钮</div>
-    </div>
+    <Shell>
+      <Shell.Branding />
+      <Shell.Navigation />
+      <Shell.Action />
+
+      <Shell.MultiTask />
+
+      <Shell.AppBar />
+      <Shell.Content />
+      <Shell.Footer />
+
+      <Shell.ToolDock>
+        <Shell.ToolDockItem />
+      </Shell.ToolDock>
+    </Shell>
   );
 }
 
